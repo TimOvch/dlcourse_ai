@@ -39,7 +39,7 @@ def cross_entropy_loss(probs, target_index):
     # TODO implement cross-entropy
     # Your final implementation shouldn't have any loops
     cross_entropy = target_index*np.log(probs)
-    return -np.sum(cross_entropy)
+    return -np.mean(cross_entropy)
 
    
 
@@ -62,7 +62,7 @@ def softmax_with_cross_entropy(predictions, target_index):
     # TODO implement softmax with cross-entropy
     # Your final implementation shouldn't have any loops
     probe = softmax(predictions)
-    loss = cross_entropy(probe,target_index)
+    loss = cross_entropy(probe,1)
 
     
 
