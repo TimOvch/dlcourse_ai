@@ -97,10 +97,8 @@ class FullyConnectedLayer:
     def forward(self, X):
         # TODO: Implement forward pass
         # Your final implementation shouldn't have any loops
-        self.X = X
-        result = self.W.value.dot(X) + self.B.value
-        return result
-        
+        raise Exception("Not implemented!")
+
     def backward(self, d_out):
         """
         Backward pass
@@ -122,8 +120,9 @@ class FullyConnectedLayer:
 
         # It should be pretty similar to linear classifier from
         # the previous assignment
-        dw = 
-        
+
+        raise Exception("Not implemented!")
+
         return d_input
 
     def params(self):
